@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.example.GPLX.Activities.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.BienBaoActivity"
+            android:parentActivityName="com.example.GPLX.Activities.MainActivity"
+            android:label="Biển báo"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.LyThuyetActivity"
+            android:parentActivityName="com.example.GPLX.Activities.MainActivity"
+            android:label="Lý thuyết"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.MeoGhiNhoActivity"
+            android:parentActivityName="com.example.GPLX.Activities.MainActivity"
+            android:label="Mẹo ghi nhớ"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.MeoThucHanhAActivity"
+            android:parentActivityName="com.example.GPLX.Activities.MainActivity"
+            android:label="Mẹo thực hành"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.MeoThucHanhBActivity"
+            android:parentActivityName="com.example.GPLX.Activities.MainActivity"
+            android:label="Mẹo thực hành"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.KinhNghiemThiAActivity"
+            android:parentActivityName="com.example.GPLX.Activities.MeoThucHanhAActivity"
+            android:label="Kinh nghiệm thi"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.KinhNghiemThiBActivity"
+            android:parentActivityName="com.example.GPLX.Activities.MeoThucHanhBActivity"
+            android:label="Kinh nghiệm thi"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.ThiSatHachActivity"
+            android:parentActivityName="com.example.GPLX.Activities.MainActivity"
+            android:label="Thi sát hạch"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.KetQuaActivity"
+            android:parentActivityName="com.example.GPLX.Activities.MainActivity"
+            android:label="Kết quả thi"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.XemLaiDapAnActivity"
+            android:parentActivityName="com.example.GPLX.Activities.KetQuaActivity"
+            android:label="Xem lại đáp án"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.example.GPLX.Activities.LichSuBaiThiActivity"
+            android:parentActivityName="com.example.GPLX.Activities.MainActivity"
+            android:label="Lịch sử bài thi"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
+    </application>
+
+</manifest>
